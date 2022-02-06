@@ -17,6 +17,7 @@ window.addEventListener("DOMContentLoaded",function(){
 		.then(res=>res.json())
 		.then(json=>{
 			console.log(json);
+			$msg.innerHTML = json?.msg
 		})
 		.catch(err=>{
 			console.log(`Hay un error: ${err}`);
