@@ -1,19 +1,20 @@
 <?php
 
 function plz_script_login(){
-	/* wp_register_script("plz-login", plugins_url("../assets/js/login.js",__FILE__)); */
+	wp_register_script("plz-login", plugins_url("../assets/js/login.js",__FILE__));
+	wp_enqueue_script("plz-login");
 }
 
 add_action("wp_enqueue_scripts","plz_script_login");
 
 function plz_add_login_form(){
 
-	wp_enqueue_script("plz-login");
+	plz_script_login();
 
 	$response = '
 	<main class="signin">
 		<div class="signin__container">
-			<form class="signin__form" id="signin">
+			<form class="signin__form" id="login">
 				<div class="signin__email name--campo">
 					<label for="email">Email address</label>
 					<input name="email" type="email" id="email">

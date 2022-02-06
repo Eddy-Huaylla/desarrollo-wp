@@ -1,6 +1,6 @@
 window.addEventListener("DOMContentLoaded",function(){
-	console.log("registro cargado")
-	let $form = document.querySelector("#signin");
+
+	let $form = document.querySelector("#login");
 	let $msg = document.querySelector(".msg");
 
 	$form.addEventListener("submit",function(e){
@@ -9,7 +9,9 @@ window.addEventListener("DOMContentLoaded",function(){
 		let datos = new FormData($form);
 		let datosParse = new URLSearchParams(datos);
 
-		fetch("https://cursodesarrollowp.com/wp-json/plz/registro",
+		console.log($msg);
+
+		fetch("https://cursodesarrollowp.com/wp-json/plz/login",
 			{
 				method: "POST",
 				body: datosParse
@@ -18,11 +20,10 @@ window.addEventListener("DOMContentLoaded",function(){
 		.then(res=>res.json())
 		.then(json=>{
 			console.log(json);
-			$msg.innerHTML = json?.msg
+			$msg.innerHTML = json;
 		})
 		.catch(err=>{
-			console.log(`Hay un error: ${err}`);
+			console.log(`Hay un error: ${err}`)
 		})
-
 	});
 });
