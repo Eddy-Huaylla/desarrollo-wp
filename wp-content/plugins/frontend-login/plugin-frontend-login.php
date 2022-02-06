@@ -13,9 +13,4 @@
  * Text Domain:       yardsale
 */
 
-
-function plz_test(){
-    echo "<h1>Mi primer plugin</h1>";
-}
-
-add_action("wp_head","plz_test");
+require_once plugin_dir_path(__FILE__)."/public/shortcode/form-registro.php";
