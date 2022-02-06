@@ -1,7 +1,7 @@
 <?php
 
 function plz_script_login(){
-	wp_register_script("plz-login", plugins_url("../assets/js/login.js",__FILE__));
+	/* wp_register_script("plz-login", plugins_url("../assets/js/login.js",__FILE__)); */
 }
 
 add_action("wp_enqueue_scripts","plz_script_login");
