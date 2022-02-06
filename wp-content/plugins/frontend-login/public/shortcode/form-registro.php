@@ -2,6 +2,15 @@
 
 function plz_script_registro(){
 	wp_register_script("plz-registro", plugins_url("../assets/js/registro.js",__FILE__));
+
+	wp_localize_script(
+		"plz-registro",
+		"plz",
+		[
+			"rest_url" => rest_url("plz")
+		]
+	);
+
 	wp_enqueue_script("plz-registro");
 }
 

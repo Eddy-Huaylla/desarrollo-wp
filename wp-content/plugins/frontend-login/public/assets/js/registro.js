@@ -9,7 +9,7 @@ window.addEventListener("DOMContentLoaded",function(){
 		let datos = new FormData($form);
 		let datosParse = new URLSearchParams(datos);
 
-		fetch("https://cursodesarrollowp.com/wp-json/plz/registro",
+		fetch(plz.rest_url+"/registro",
 			{
 				method: "POST",
 				body: datosParse

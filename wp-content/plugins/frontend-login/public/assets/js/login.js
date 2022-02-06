@@ -11,7 +11,7 @@ window.addEventListener("DOMContentLoaded",function(){
 
 		console.log($msg);
 
-		fetch("https://cursodesarrollowp.com/wp-json/plz/login",
+		fetch(plz.rest_url+"/login",
 			{
 				method: "POST",
 				body: datosParse
@@ -21,6 +21,7 @@ window.addEventListener("DOMContentLoaded",function(){
 		.then(json=>{
 			console.log(json);
 			$msg.innerHTML = json;
+			window.location.href = plz.home_url;
 		})
 		.catch(err=>{
 			console.log(`Hay un error: ${err}`)
