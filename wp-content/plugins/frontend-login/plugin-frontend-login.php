@@ -13,6 +13,10 @@
  * Text Domain:       yardsale
 */
 
+if(!defined('PLZ_PATH')) {
+    define('PLZ_PATH', plugin_dir_path(__FILE__));
+}
+
 $PLUGIN_DIR = plugin_dir_path(__FILE__);
 
 //API REST
@@ -22,6 +26,10 @@ require_once $PLUGIN_DIR."/includes/API/api-login.php";
 //Shortcodes
 require_once $PLUGIN_DIR."/public/shortcode/form-registro.php";
 require_once $PLUGIN_DIR."/public/shortcode/form-login.php";
+
+
+//blocks
+require_once $PLUGIN_DIR."/blocks/register/index.php";
 
 
 function plz_plugin_activar(){
