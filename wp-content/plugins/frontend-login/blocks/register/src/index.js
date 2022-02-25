@@ -1,6 +1,7 @@
 import {registerBlockType} from "@wordpress/blocks";
 
 import edit from "./edit";
+import save from "./save";
 import "./styles.scss";
 
 registerBlockType("plz/register", {
@@ -31,5 +32,5 @@ registerBlockType("plz/register", {
 		}
 	},
 	edit,
-	save: () => <h2>Register</h2>
+	save
 });

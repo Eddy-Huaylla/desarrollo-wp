@@ -1,6 +1,6 @@
 window.addEventListener("DOMContentLoaded",function(){
 	console.log("registro cargado")
-	let $form = document.querySelector("#signin");
+	let $form = document.querySelector("#signup");
 	let $msg = document.querySelector(".msg");
 
 	$form.addEventListener("submit",function(e){

@@ -23,6 +23,7 @@ function plz_register_blocks () {
 		'plz/register',
 		array(
 			'editor_script' => 'plz-register-block',
+			'script'        => 'plz-registro',
 			'style'         => 'plz-register-block',
 		)
 	);
