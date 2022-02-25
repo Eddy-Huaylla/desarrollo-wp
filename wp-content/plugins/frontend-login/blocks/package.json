@@ -1,11 +1,11 @@
 {
-  "name": "blocks",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
+	"name": "blocks",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
 		"build": "wp-scripts build",
-    "build:register": "wp-scripts build ./register/src/index.js --output-path=./register/build",
+		"build:register": "wp-scripts build ./register/src/index.js --output-path=./register/build",
 		"check-engines": "wp-scripts check-engines",
 		"check-licenses": "wp-scripts check-licenses",
 		"format": "wp-scripts format",
@@ -17,14 +17,14 @@
 		"packages-update": "wp-scripts packages-update",
 		"plugin-zip": "wp-scripts plugin-zip",
 		"start": "wp-scripts start",
-    "start:register": "wp-scripts start  ./register/src/index.js --output-path=./register/build",
+		"start:register": "wp-scripts start  ./register/src/index.js --output-path=./register/build",
 		"test:e2e": "wp-scripts test-e2e",
 		"test:unit": "wp-scripts test-unit-js"
 	},
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "@wordpress/scripts": "^21.0.1"
-  }
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"@wordpress/scripts": "^21.0.1"
+	}
 }
