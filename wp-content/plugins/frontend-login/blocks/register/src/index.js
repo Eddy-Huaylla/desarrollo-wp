@@ -29,6 +29,10 @@ registerBlockType("plz/register", {
 		valueSubmit: {
 			type: "string",
 			default: "Create"
+		},
+		text: {
+			source: "html",
+			selector: "p"
 		}
 	},
 	edit,
